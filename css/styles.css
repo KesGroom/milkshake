@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-yellow: #ffcf4a;
+    --color-yellow-dark: #f5bf09;
+    --color-white: #fefefe;
+    --color-black: #1a1a1a;
+    --color-cyan: #99cfee;
+    --color-salmon: #ed6b67;
+    --color-beige: #f8f3eb;
+    --color-brown: #945526;
+    --color-brown-dark: #4c2a21;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.family-bebas {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.button {
+    text-decoration: none;
+    padding: .5rem 2rem;
+    border-radius: 25px;
+    transition: all ease-in-out 100ms;
+    min-width: 12rem;
+    color: var(--color-white);
+}
+
+.button:hover {
+    filter: brightness(90%);
+}
+
+.bg-salmon {
+    background-color: var(--color-salmon);
+}
+
+.bg-cyan {
+    background-color: var(--color-cyan);
+}
+
+.bg-yellow {
+    background-color: var(--color-yellow);
+}
+
+.bg-yellow-dark {
+    background-color: var(--color-yellow-dark);
+}
+
+.bg-beige {
+    background-color: var(--color-beige);
+}
+
+.color-cyan {
+    color: var(--color-cyan);
+}
+
+.color-salmon {
+    color: var(--color-salmon);
+}
+
+.color-yellow {
+    color: var(--color-yellow);
+}
+
+.color-yellow-dark {
+    color: var(--color-yellow-dark);
+}
+
+.color-brown-dark {
+    color: var(--color-brown-dark);
+}
+
+.color-white {
+    color: var(--color-white);
+}
+
+.color-black {
+    color: var(--color-black);
+}
+
+.content {
+    padding: 1rem;
+}
