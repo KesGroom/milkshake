@@ -34,7 +34,7 @@ h6 {
     font-family: 'Bebas Neue', sans-serif;
 }
 
-.button {
+.-button {
     text-decoration: none;
     padding: .5rem 2rem;
     border-radius: 25px;
@@ -43,58 +43,54 @@ h6 {
     color: var(--color-white);
 }
 
-.button:hover {
+.-button:hover {
     filter: brightness(90%);
 }
 
-.bg-salmon {
+.-bg-salmon {
     background-color: var(--color-salmon);
 }
 
-.bg-cyan {
+.-bg-cyan {
     background-color: var(--color-cyan);
 }
 
-.bg-yellow {
+.-bg-yellow {
     background-color: var(--color-yellow);
 }
 
-.bg-yellow-dark {
+.-bg-yellow-dark {
     background-color: var(--color-yellow-dark);
 }
 
-.bg-beige {
+.-bg-beige {
     background-color: var(--color-beige);
 }
 
-.color-cyan {
+.-color-cyan {
     color: var(--color-cyan);
 }
 
-.color-salmon {
+.-color-salmon {
     color: var(--color-salmon);
 }
 
-.color-yellow {
+.-color-yellow {
     color: var(--color-yellow);
 }
 
-.color-yellow-dark {
+.-color-yellow-dark {
     color: var(--color-yellow-dark);
 }
 
-.color-brown-dark {
+.-color-brown-dark {
     color: var(--color-brown-dark);
 }
 
-.color-white {
+.-color-white {
     color: var(--color-white);
 }
 
-.color-black {
+.-color-black {
     color: var(--color-black);
-}
-
-.content {
-    padding: 1rem;
 }
