@@ -133,25 +133,37 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 100vh;
+        padding: 4rem 0rem;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .msk-title-banner {
+            font-size: 4.8rem;
+            font-weight: 100;
+            margin: 0px;
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+        }
 
         .msk-card-review {
             gap: 1rem;
-            display:flex;
+            display: flex;
             flex-direction: column;
             align-items: center;
-            width: 90%; 
-            max-width: 400px; 
+            width: 90%;
+            max-width: 400px;
             padding: 20px;
             border-radius: 10px;
             text-align: left;
-            .msk-top-card{
+
+            .msk-top-card {
                 gap: .5rem;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
             }
-            .msk-review-button{
+
+            .msk-review-button {
                 padding: .4rem 2rem;
             }
 
@@ -164,25 +176,26 @@
                 background-position: center;
                 flex-shrink: 0;
 
-                &:nth-child(1) {
+                &.first {
                     background-image: url('../assets/img/experience/review_1.png');
                 }
 
-                &:nth-child(2) {
+                &.second {
                     background-image: url('../assets/img/experience/review_2.png');
                 }
 
-                &:nth-child(3) {
+                &.third {
                     background-image: url('../assets/img/experience/review_3.png');
                 }
 
-                &:nth-child(4) {
+                &.fourth {
                     background-image: url('../assets/img/experience/review_4.png');
                 }
             }
 
             .msk-text-review {
                 flex-grow: 1;
+
                 .msk-title-banner {
                     font-size: 1.8rem;
                     font-weight: 100;
@@ -199,5 +212,79 @@
 
             }
         }
+    }
+
+    .msk-slider-experience {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .msk-title-banner {
+            font-size: 5.8rem;
+            font-weight: 100;
+            margin: 0px;
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+        }
+
+        .msk-client-experience {
+            .msk-photo-client-experience {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-evenly;
+                gap: 1rem;
+                row-gap: 1rem;
+                padding: 1.5rem;
+
+                .msk-photo-experience {
+                    width: 22rem;
+                    height: 24rem;
+                    border-radius: 10px;
+                    background-size: cover;
+                    background-position: center;
+
+                    &:nth-child(1) {
+                        background-image: url('../assets/img/experience/client_1.png');
+                    }
+
+                    &:nth-child(2) {
+                        background-image: url('../assets/img/experience/client_2.png');
+                    }
+
+                    &:nth-child(3) {
+                        background-image: url('../assets/img/experience/client_3.png');
+                    }
+
+                    &:nth-child(4) {
+                        background-image: url('../assets/img/experience/client_4.png');
+                    }
+
+                    &:nth-child(5) {
+                        background-image: url('../assets/img/experience/client_5.png');
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+.msk-footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .msk-title-banner {
+        font-size: 5.8rem;
+        font-weight: 100;
+        margin: 0px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
     }
 }
