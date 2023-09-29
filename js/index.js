@@ -11,4 +11,19 @@ $(document).ready(function () {
         appendDots: dots,
         useCss: true
     });
+    const dotsNews = $('.msk-news-dots');
+    $('.msk-slider-news').slick({
+        dots: true,
+        infinite: true,
+        speed: 200,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dotsClass: 'msk-new-dot slick-dots',
+        appendDots: dotsNews,
+        centerMode: true,
+        variableWidth: true,
+        initialSlide: 1,
+        autoplay: true
+    });
 })

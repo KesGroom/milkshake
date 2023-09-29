@@ -218,6 +218,14 @@
                     &.msk-second {
                         background-image: url('../assets/img/home/unicorn.png');
                     }
+
+                    &.msk-third {
+                        background-image: url("../assets/img/home/octava_maravilla.png");
+                    }
+
+                    &.msk-fourth {
+                        background-image: url("../assets/img/home/section1_item3.png");
+                    }
                 }
 
                 .msk-title-popular {
@@ -233,6 +241,100 @@
         }
     }
 
+    .msk-section-news {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem 0px;
+        min-height: 28rem;
+
+        .msk-news-title {
+            font-size: 4.5rem;
+            font-weight: 100;
+        }
+
+        .msk-slider-news {
+            width: 200%;
+            display: flex;
+
+            & .slick-list .slick-track {
+                display: flex !important;
+                align-items: center !important;
+                gap: .3rem !important;
+            }
+        }
+
+        .msk-slider-card {
+            background-color: var(--color-beige);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: .8rem;
+            flex-shrink: 0 !important;
+            position: relative;
+            overflow: hidden;
+            width: 12rem;
+            height: fit-content;
+            transition: all ease-in-out 100ms;
+
+
+            .backdrop {
+                background-color: #1a1a1a6c;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 1;
+            }
+
+            .msk-card-image {
+                width: 12rem;
+                height: 12rem;
+                background-position: center;
+                background-size: cover;
+                transition: all ease-in-out 100ms;
+
+                &.pre-first {
+                    background-image: url('../assets/img/home/chocoramo.png');
+                    background-size: 100% 100%;
+                }
+
+                &.first {
+                    background-image: url('../assets/img/home/salchipapa.png');
+                }
+
+                &.second {
+                    background-image: url('../assets/img/home/mefa.png');
+                }
+            }
+
+            &.slick-active {
+                .msk-card-image {
+                    width: 15rem;
+                    height: 13rem;
+                }
+
+                .backdrop {
+                    background-color: transparent;
+                    display: none;
+                }
+            }
+
+            .msk-card-title {
+                font-size: 1.3rem;
+                font-weight: 100;
+                margin-bottom: .5rem;
+                text-align: center;
+            }
+
+            .msk-button-new {
+                padding: .5rem 2rem;
+            }
+
+        }
+    }
+
 }
 
 .msk-slider {
@@ -243,7 +345,6 @@
         margin-bottom: 0px !important;
     }
 
-
     .msk-slide {
         width: 100%;
         height: 55vh;
@@ -253,19 +354,22 @@
     }
 }
 
-.msk-slider-dots {
+.msk-slider-dots,
+.msk-news-dots {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 2rem;
+    height: 1rem;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
-    .msk-slider-dot {
+    .msk-slider-dot,
+    .msk-new-dot {
         bottom: 0px;
     }
 
-    .msk-slider-dot li {
+    .msk-slider-dot li,
+    .msk-new-dot li {
         background-color: var(--color-yellow-dark) !important;
         border-radius: 100%;
         width: .7rem;
@@ -274,5 +378,9 @@
         &:not(:last-child) {
             margin-right: 1rem;
         }
+    }
+
+    .msk-new-dot li {
+        background-color: var(--color-brown) !important;
     }
 }
