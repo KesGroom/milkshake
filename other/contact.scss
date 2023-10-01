@@ -1,0 +1,363 @@
+.msk-main {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .msk-banner {
+        width: 100%;
+        height: 60vh;
+        background-image: url('./../assets/img/contact/banner-contact.png');
+        background-position: 45% 95%;
+        background-size: cover;
+        background-color: #53535379;
+        background-blend-mode: soft-light;
+        z-index: 9;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        gap: .5rem;
+        padding-bottom: 10rem;
+
+        @media (min-width:481px) {
+            height: 70vh;
+            padding-bottom: 15rem;
+            align-items: flex-start;
+            padding-left: 4rem;
+        }
+
+        @media (min-width:820px) {
+            height: 90vh;
+            padding-bottom: 6rem;
+        }
+
+        .msk-title-banner {
+            font-size: 4.8rem;
+            position: relative;
+            font-weight: 100;
+            margin: 0px;
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+            line-height: 4.8rem;
+
+            @media (min-width:481px) {
+                font-size: 7.8rem;
+                line-height: 7.8rem;
+
+                &::before {
+                    width: 29%;
+                    height: .5rem;
+                    background-color: var(--color-salmon);
+                    position: absolute;
+                    display: inline-block;
+                    content: '';
+                    top: -1rem;
+                    left: .3rem;
+                }
+
+            }
+
+            @media (min-width:820px) {
+                font-size: 10.8rem;
+                line-height: 10.8rem;
+
+                &::before {
+                    left: .5rem;
+                }
+            }
+        }
+
+        .msk-subtitle-banner {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-top: -1.5rem;
+
+            @media (min-width:481px) {
+                font-size: 1.8rem;
+            }
+
+            @media (min-width:820px) {
+                font-size: 1.9rem;
+            }
+        }
+
+
+
+    }
+
+    .msk-bar {
+        width: 25%;
+        height: .3rem;
+        border-radius: 25px;
+        margin: 1.5rem 0rem -1rem 0rem;
+        border: none;
+
+        @media (min-width:481px) {
+            display: none;
+        }
+    }
+
+    .msk-section-contact {
+        width: 100%;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 2rem;
+
+        .msk-title-banner {
+            font-size: 3.8rem;
+            font-weight: 100;
+            margin: 0px;
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+            margin-top: 4rem;
+
+            @media (min-width:481px) {
+                font-size: 7.8rem;
+            }
+
+            @media (min-width:820px) {
+                font-size: 6.8rem;
+            }
+        }
+
+        .msk-contact-text {
+            text-align: center;
+            margin-top: 1rem;
+            font-weight: 900;
+            margin-bottom: 2rem;
+
+            @media (min-width:481px) {
+                font-size: 1.2rem;
+            }
+
+            @media (min-width:820px) {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .msk-section-message {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        @media (min-width:820px) {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .msk-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            height: 100%;
+
+            @media (min-width:481px) {
+                padding: 4rem 2rem;
+            }
+
+            @media (min-width:820px) {
+                min-height: 33.8rem;
+            }
+
+            .msk-form-item {
+                border: none;
+                outline: none;
+                width: 80%;
+                padding: 1rem 2rem;
+                border-radius: 5px;
+                resize: vertical;
+
+                @media (min-width:481px) {
+                    width: 75%;
+                }
+
+                @media (min-width:820px) {}
+
+                &::placeholder {
+                    font-family: 'Montserrat', sans-serif;
+                }
+            }
+        }
+
+        .msk-address {
+            width: 100%;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+
+            .msk-title {
+                font-size: 3.8rem;
+                font-weight: 100;
+                margin: 0px;
+                margin-block-start: 0px;
+                margin-block-end: 0px;
+
+                @media (min-width:481px) {
+                    font-size: 5.8rem;
+                }
+
+                @media (min-width:820px) {
+                    font-size: 6.8rem;
+                }
+            }
+
+            .msk-address-slider {
+                & .slick-list .slick-track {
+                    display: flex !important;
+                    align-items: center !important;
+                    gap: 1rem !important;
+                }
+
+                .msk-card {
+                    min-height: 19rem;
+                    width: 15rem;
+                    border-radius: 10px;
+                    padding: 20px;
+                    text-align: center;
+                    flex-shrink: 0;
+
+                    .msk-card-tittle {
+                        font-size: 24px;
+                    }
+
+                    .msk-card-p {
+                        font-size: 16px;
+                        margin: 10px 0;
+                        text-align: left;
+                    }
+                }
+
+            }
+
+            .msk-address-dots {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 1rem;
+                position: relative;
+                margin-bottom: 1rem;
+
+                .msk-address-dot {
+                    bottom: 0px;
+                }
+
+                .msk-address-dot li {
+                    background-color: var(--color-yellow-dark) !important;
+                    border-radius: 100%;
+                    width: .7rem;
+                    height: .7rem;
+
+                    &:not(:last-child) {
+                        margin-right: 1rem;
+                    }
+                }
+
+                .msk-address-dot li {
+                    background-color: var(--color-brown) !important;
+                }
+            }
+
+            .msk-slider-dots {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .msk-section-map {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+
+        .msk-title-banner {
+            font-size: 3.8rem;
+            font-weight: 100;
+            margin: 0px;
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+            margin-top: 2rem;
+
+            @media (min-width:481px) {
+                font-size: 5.8rem;
+            }
+
+            @media (min-width:820px) {
+                font-size: 6.8rem;
+            }
+        }
+
+        .msk-iframe-map {
+            width: 85%;
+            height: 25rem;
+
+            @media (min-width:481px) {
+                width: 80%;
+                height: 40rem;
+            }
+
+            @media (min-width:820px) {}
+        }
+
+    }
+}
+
+.msk-footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+
+    .msk-section-footer-networks {
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+        display: flex;
+        gap: .4rem;
+        padding: 1rem;
+        margin-top: 3rem;
+
+        .msk-icons-section {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding: 1rem;
+            justify-content: center;
+
+            .msk-icons {
+                font-size: 3rem;
+            }
+        }
+
+        .msk-subtitle-banner {
+            font-weight: normal;
+            font-size: .8rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+
+            @media (min-width:481px) {
+                max-width: 50%;
+            }
+        }
+    }
+}
+
+.msk-section-footer-networks {
+    margin-top: 0px !important;
+}

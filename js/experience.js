@@ -48,7 +48,6 @@ $(document).ready(function () {
     const stars = $('.msk-stars .fas.fa-star');
     stars.map((index, star) => {
         star.addEventListener('click', () => {
-            console.log(`Click en la estrella ${index}`);
             stars.map((i, star) => {
                 if (i > index) {
                     star.classList.remove('-color-yellow-dark');
@@ -56,7 +55,6 @@ $(document).ready(function () {
                     star.classList.add('-color-yellow-dark');
                 }
             })
-
         })
     })
 })
