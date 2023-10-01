@@ -28,11 +28,12 @@
         }
 
         @media (min-width:820px) {
-            height: 90hv;
+            height: 90vh;
         }
 
         .msk-title-banner {
             font-size: 4.8rem;
+            position: relative;
             font-weight: 100;
             margin: 0px;
             margin-block-start: 0px;
@@ -40,6 +41,19 @@
 
             @media (min-width:481px) {
                 font-size: 7.8rem;
+
+                &::before {
+                    width: 29%;
+                    height: .5rem;
+                    background-color: var(--color-salmon);
+                    position: absolute;
+                    display: inline-block;
+                    content: '';
+                    top: -.7rem;
+                    left: 0px;
+                }
+
+                ;
             }
 
             @media (min-width:820px) {
@@ -71,6 +85,10 @@
         border-radius: 25px;
         margin: 1.5rem 0rem -1rem 0rem;
         border: none;
+
+        @media (min-width:481px) {
+            display: none;
+        }
     }
 
     .msk-section-contact {
@@ -144,6 +162,12 @@
                         padding: .8rem;
                         border-radius: 10px;
                         resize: vertical;
+                        @media (min-width:481px) {
+                            width:70% ;
+                        }
+                
+                        @media (min-width:820px) {
+                        }
 
                         &::placeholder {
                             font-family: 'Montserrat', sans-serif;
@@ -164,10 +188,12 @@
             .msk-container-cards {
 
                 .msk-card {
+                    min-height:28rem ;
                     width: 13rem;
                     border-radius: 10px;
                     padding: 20px;
                     text-align: center;
+                    margin-bottom: 3rem;
 
                     .msk-card-tittle {
                         font-size: 24px;
@@ -234,10 +260,18 @@
                 width: 17rem;
                 height: 20rem;
                 margin: 2rem 0rem 3rem 0rem;
+                @media (min-width:481px) {
+                    width: 40rem;
+                    height: 50rem;
+                }
+        
+                @media (min-width:820px) {
+                }
             }
         }
     }
 }
+
 .msk-footer {
     width: 100%;
     position: relative;
@@ -245,6 +279,7 @@
     align-items: center;
     flex-direction: column;
     padding-top: 3rem;
+
     .msk-section-footer-networks {
         align-items: center;
         width: 100%;

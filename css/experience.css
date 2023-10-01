@@ -25,10 +25,11 @@
         @media (min-width:481px) {
             height: 70vh;
             padding-bottom: 15rem;
+            align-items: center;
         }
 
         @media (min-width:820px) {
-            height: 90hv;
+            height: 90vh;
         }
 
         .msk-title-banner {
