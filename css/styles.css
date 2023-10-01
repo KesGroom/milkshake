@@ -19,6 +19,11 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    position: relative;
+
+    &.no-scroll{
+        overflow: hidden;
+    }
 
     &::-webkit-scrollbar {
         width: 6px;
@@ -61,6 +66,7 @@ h6 {
     display: flex;
     align-items: center;
     width: fit-content;
+    text-align: center;
 }
 
 .-button i[class*="fas fa-"],

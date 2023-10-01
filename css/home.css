@@ -1,10 +1,11 @@
-.msk-header {
+/* .msk-header {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     top: 0px;
+    left: 0px;
     z-index: 10;
     padding: .3rem;
     padding-right: 3rem;
@@ -38,6 +39,156 @@
 
         &:hover {
             color: var(--color-yellow-dark) !important;
+        }
+    }
+} */
+.msk-header {
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    position: fixed !important;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    padding: .3rem;
+    padding-right: 3rem;
+
+    & i[class*="fas fa"] {
+        font-size: 1.5rem;
+    }
+
+    .msk-header-bars {
+        @media (min-width:820px) {
+            display: none;
+        }
+    }
+
+    .msk-logo {
+        width: 10rem;
+        display: none;
+
+        @media (min-width:820px) {
+            display: inline-block;
+        }
+    }
+
+    .msk-nav {
+        display: none;
+        align-items: center;
+        gap: 3rem;
+
+        .msk-nav-item {
+            color: var(--color-white);
+            text-decoration: none;
+            font-weight: bold;
+            transition: all ease-in-out 100ms;
+
+            &:hover {
+                color: var(--color-yellow-dark) !important
+            }
+        }
+
+        @media (min-width:820px) {
+            display: flex;
+        }
+    }
+
+    .msk-search {
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all ease-in-out 100ms;
+
+        &:hover {
+            color: var(--color-yellow-dark) !important;
+        }
+    }
+}
+
+.msk-lateral-menu {
+    width: 100%;
+    background-color: var(--color-beige);
+    padding: 1rem;
+    position: fixed;
+    z-index: 11;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: -100%;
+    transition: all ease-in-out 150ms;
+    overflow-y: auto;
+
+    &.open {
+        left: 0px;
+    }
+
+    .msk-top-section {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        .msk-logo {
+            width: 70%;
+        }
+    }
+
+    .msk-menu-item {
+        width: 100%;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: flex-start;
+        text-decoration: none;
+        color: var(--color-brown-dark);
+        padding: 1rem 1rem;
+        border-bottom: 1px solid var(--color-brown-dark);
+
+        &.msk-select {
+            border-color: var(--color-salmon);
+            border-right: 1px solid;
+            border-top: 1px solid;
+            border-radius: 0px 10px 10px 0px;
+            font-weight: bold;
+            border-width: 2px;
+        }
+    }
+
+    .msk-close-button {
+        width: 100%;
+        text-align: right;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: .5rem;
+        font-weight: bold;
+
+        & i[class*="fas fa"] {
+            font-size: 1.5rem;
+        }
+    }
+
+    .msk-section-menu-networks {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: .8rem;
+        text-align: center;
+        margin-top: .5rem;
+
+        & .msk-icons-section {
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: .5rem;
         }
     }
 }
@@ -76,18 +227,44 @@
         gap: .5rem;
         padding-bottom: 6rem;
 
+        @media (min-width:481px) {
+            height: 70vh;
+            padding-bottom: 15rem;
+        }
+
+        @media (min-width:820px) {
+            height: 90vh;
+            padding-bottom: 6rem;
+        }
+
         .msk-title-banner {
             font-size: 5.5rem;
             font-weight: 100;
             margin: 0px;
             margin-block-start: 0px;
             margin-block-end: 0px;
+
+            @media (min-width:481px) {
+                font-size: 7.8rem;
+            }
+
+            @media (min-width:820px) {
+                font-size: 10.8rem;
+            }
         }
 
         .msk-subtitle-banner {
             font-size: 1.3rem;
             font-weight: bold;
             margin-top: -2.3rem;
+
+            @media (min-width:481px) {
+                font-size: 1.8rem;
+            }
+
+            @media (min-width:820px) {
+                font-size: 1.9rem;
+            }
         }
     }
 
@@ -116,6 +293,10 @@
         justify-content: space-evenly;
         gap: 1rem;
 
+        @media (min-width:481px) {
+            flex-wrap: nowrap;
+        }
+
         .msk-photo {
             width: 22rem;
             height: 24rem;
@@ -134,6 +315,14 @@
             &:nth-child(3) {
                 background-image: url('../assets/img/home/section1_item3.png');
             }
+
+            @media (min-width:481px) {
+                height: 18rem;
+            }
+
+            @media (min-width:820px) {
+                height: 18rem;
+            }
         }
     }
 
@@ -142,6 +331,14 @@
         margin-top: 3rem;
         font-weight: bold;
         margin-bottom: 2rem;
+
+        @media (min-width:481px) {
+            width: 60%;
+        }
+
+        @media (min-width:820px) {
+            width: 45%;
+        }
     }
 
     .msk-section-slider {
@@ -150,6 +347,7 @@
         margin-top: 3rem;
         border-radius: 0px;
         overflow: hidden;
+
 
         .msk-about {
             background-image: url(../assets/img/home/about_us.png);
@@ -184,6 +382,7 @@
 
         .msk-popular-title {
             font-size: 4rem;
+            margin-bottom: 1rem;
         }
 
         .msk-popular-content {
@@ -192,6 +391,18 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            @media (min-width:481px) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                place-items: center;
+                width: 80%;
+                margin-bottom: 3rem;
+            }
+
+            @media (min-width:820px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
 
             .msk-card-popular {
                 width: fit-content;
@@ -202,6 +413,15 @@
                 display: flex;
                 align-items: center;
                 flex-direction: column;
+
+                &:nth-child(5),
+                &:nth-child(6) {
+                    display: none;
+
+                    @media (min-width:820px) {
+                        display: flex;
+                    }
+                }
 
                 .msk-card-image {
                     width: 15rem;
@@ -226,6 +446,7 @@
                     &.msk-fourth {
                         background-image: url("../assets/img/home/section1_item3.png");
                     }
+
                 }
 
                 .msk-title-popular {
@@ -248,6 +469,7 @@
         flex-direction: column;
         padding: 1rem 0px;
         min-height: 28rem;
+        overflow: hidden;
 
         .msk-news-title {
             font-size: 4.5rem;
@@ -261,7 +483,7 @@
             & .slick-list .slick-track {
                 display: flex !important;
                 align-items: center !important;
-                gap: .3rem !important;
+                gap: 2.8rem !important;
             }
         }
 
@@ -280,12 +502,23 @@
             transition: all ease-in-out 100ms;
 
 
+            @media (min-width:481px) {
+                width: 21rem;
+            }
+
+            @media (min-width:820px) {}
+
+
             .backdrop {
                 background-color: #1a1a1a6c;
                 width: 100%;
                 height: 100%;
                 position: absolute;
                 z-index: 1;
+
+                @media (min-width:820px) {
+                    display: none;
+                }
             }
 
             .msk-card-image {
@@ -294,6 +527,13 @@
                 background-position: center;
                 background-size: cover;
                 transition: all ease-in-out 100ms;
+
+                @media (min-width:481px) {
+                    width: 21rem;
+                    height: 21rem;
+                }
+
+                @media (min-width:820px) {}
 
                 &.pre-first {
                     background-image: url('../assets/img/home/chocoramo.png');
@@ -313,6 +553,16 @@
                 .msk-card-image {
                     width: 15rem;
                     height: 13rem;
+
+                    @media (min-width:481px) {
+                        width: 25rem;
+                        height: 23rem;
+                    }
+
+                    @media (min-width:820px) {
+                        width: 21rem;
+                        height: 21rem;
+                    }
                 }
 
                 .backdrop {
@@ -351,11 +601,20 @@
             background-color: #1a1a1aa4;
             background-blend-mode: soft-light;
 
+            @media (min-width:820px) {
+                height: 50vh;
+            }
+
             .msk-banner-title-event {
                 font-size: 4rem;
                 font-weight: 100;
                 margin-inline-end: 0px;
                 position: relative;
+
+                @media (min-width:481px) {
+                    font-size: 5rem;
+                }
+
 
                 &::after {
                     position: absolute;
@@ -370,6 +629,20 @@
             }
         }
 
+        .msk-events-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            @media (min-width:481px) {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+            @media (min-width:820px) {}
+        }
+
         .msk-event {
             padding: 1rem;
             text-align: center;
@@ -377,16 +650,37 @@
             flex-direction: column;
             align-items: center;
             gap: 1rem;
+            width: 100%;
+
+            @media (min-width:481px) {
+                flex-shrink: 0;
+                width: 50%;
+            }
+
+            @media (min-width:820px) {
+                order: 2;
+                width: 55%;
+                height: 35rem;
+            }
 
             .msk-event-title {
                 font-size: 3.5rem;
                 font-weight: 100;
                 line-height: 3.5rem;
+
+                @media (min-width:820px) {
+                    font-size: 4.5rem;
+                    line-height: 4.5rem;
+                }
             }
 
             .msk-event-description {
                 width: 90%;
                 font-weight: bold;
+
+                @media (min-width:820px) {
+                    width: 70%;
+                }
             }
 
             .msk-event-image {
@@ -396,6 +690,11 @@
                 background-position: center;
                 background-size: cover;
                 border-radius: 20px;
+
+                @media (min-width:820px) {
+                    width: 80%;
+                    height: 13rem;
+                }
             }
         }
 
@@ -406,6 +705,18 @@
             flex-direction: column;
             align-items: center;
             gap: 1rem;
+            height: 12rem;
+
+            @media (min-width:481px) {
+                height: 28.5rem;
+                justify-content: center;
+
+            }
+
+            @media (min-width:820px) {
+                order: 1;
+                height: 35rem;
+            }
 
             .msk-moment-title {
                 font-size: 3.5rem;
@@ -426,6 +737,14 @@
     width: 100%;
     height: 55vh;
 
+    @media (min-width:481px) {
+        height: 45vh;
+    }
+
+    @media (min-width:820px) {
+        height: 80vh;
+    }
+
     &.slick-dotted.slick-slider {
         margin-bottom: 0px !important;
     }
@@ -436,6 +755,14 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+
+        @media (min-width:481px) {
+            height: 45vh;
+        }
+
+        @media (min-width:820px) {
+            height: 80vh;
+        }
     }
 }
 
@@ -467,5 +794,82 @@
 
     .msk-new-dot li {
         background-color: var(--color-brown) !important;
+    }
+}
+
+.msk-slider-dots {
+    margin-top: 1rem;
+}
+
+.msk-footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+
+    .msk-bar {
+        width: 25%;
+        height: .4rem;
+        border-radius: 25px;
+        margin: 1rem 0rem 1rem 0rem;
+        border: none;
+
+        @media (min-width:481px) {}
+
+        @media (min-width:820px) {
+            width: 10%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .msk-title-banner {
+        align-items: center;
+        font-size: 3.8rem;
+        font-weight: 100;
+        margin: 0px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+
+        @media (min-width:481px) {}
+
+        @media (min-width:820px) {
+            font-size: 10rem;
+        }
+    }
+
+    .msk-section-footer-networks {
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+        display: flex;
+        gap: .4rem;
+        padding: 1rem;
+        margin-top: 3rem;
+
+        .msk-icons-section {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding: 1rem;
+            justify-content: center;
+
+            .msk-icons {
+                font-size: 3rem;
+            }
+        }
+
+        .msk-subtitle-banner {
+            font-weight: normal;
+            font-size: .8rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+
+            @media (min-width:481px) {
+                max-width: 50%;
+            }
+        }
     }
 }

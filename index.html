@@ -19,15 +19,15 @@
 </head>
 
 <body>
-    <!-- Header Nav -->
     <header class="msk-header">
         <img class="msk-logo" src="./assets/img/Logo2020.png" alt="">
+        <i id="menu-button" class="fas fa-bars -color-yellow-dark msk-header-bars"></i>
         <nav class="msk-nav">
             <a href="#" class="msk-nav-item -color-yellow-dark">Inicio</a>
             <a href="#" class="msk-nav-item">Menú</a>
             <a href="#" class="msk-nav-item">Nosotros</a>
-            <a href="#" class="msk-nav-item">Experiencias</a>
-            <a href="#" class="msk-nav-item">Contacto</a>
+            <a href="./experience.html" class="msk-nav-item">Experiencias</a>
+            <a href="./contact.html" class="msk-nav-item">Contacto</a>
             <a href="#" class="msk-nav-item">Eventos</a>
             <a href="#" class="msk-nav-item">Personaliza</a>
             <a href="#" class="msk-nav-item">Regalos</a>
@@ -36,6 +36,29 @@
         <i class="fas fa-search -color-yellow msk-search"></i>
     </header>
     <div class="msk-backdrop-header"></div>
+    <div id="msk-lateral-menu" class="msk-lateral-menu">
+        <span id="close-menu-button" class="msk-close-button -color-salmon">Cerrar <i class="fas fa-times"></i></span>
+        <div class="msk-top-section">
+            <img class="msk-logo" src="./assets/img/Logo2020.png" alt="">
+        </div>
+        <a href="#" class="msk-menu-item -color-salmon msk-select"><i class="fas fa-home"></i> Inicio</a>
+        <a href="#" class="msk-menu-item"><i class="fas fa-burger"></i> Menú</a>
+        <a href="#" class="msk-menu-item"><i class="fas fa-users"></i>Nosotros</a>
+        <a href="#" class="msk-menu-item"><i class="fas fa-wand-magic-sparkles"></i>Experiencias</a>
+        <a href="#" class="msk-menu-item"><i class="fas fa-envelope"></i>Contacto</a>
+        <a href="#" class="msk-menu-item"><i class="fas fa-cake"></i>Eventos</a>
+        <a href="#" class="msk-menu-item"><i class="fas fa-pencil"></i>Personaliza</a>
+        <a href="#" class="msk-menu-item"><i class="fas fa-gift"></i>Regalos</a>
+        <a href="#" class="msk-menu-item"><i class="fas fa-tags"></i>Ofertas</a>
+        <section class="msk-section-menu-networks">
+            <div class="msk-icons-section">
+                <i class="fab fa-facebook msk-icons -color-brown-dark"></i>
+                <i class="fab fa-instagram msk-icons -color-brown-dark"></i>
+            </div>
+            <span class="-color-brown-dark msk-subtitle-banner">Todas las imagenes de productos en este sitio son de
+                referencia.Copyright © MilkShake 2022. Todos los derechos reservados MilkShake.</span>
+        </section>
+    </div>
     <main class="msk-main">
         <div class="msk-banner">
             <h1 class="-color-yellow msk-title-banner">Milkshake</h1>
@@ -53,7 +76,7 @@
                 experiencia MILKSHAKE, por que no vendemos
                 malteadas, vendemos experiencias.
             </p>
-            <a href="#" class="-button -bg-salmon">Ir al menú <i class="fas fa-chevron-right"></i></a>
+            <a href="#" class="-button -bg-salmon">Ir al menú<i class="fas fa-chevron-right"></i></a>
         </section>
         <section class="msk-section-slider">
             <div class="msk-slider slick-slider">
@@ -85,7 +108,7 @@
         </section>
         <div class="msk-slider-dots"></div>
         <section class="msk-section-popular">
-            <h1 class="-color-salmon msk-popular-title">Popular</h1>
+            <h1 class="-color-salmon msk-popular-title">Populares</h1>
             <div class="msk-popular-content">
                 <div class="msk-card-popular">
                     <div class="msk-card-image msk-first"></div>
@@ -162,27 +185,41 @@
             <div class="msk-banner-event">
                 <h1 class="-color-yellow msk-banner-title-event">Eventos</h1>
             </div>
-            <div class="msk-event -bg-salmon">
-                <h1 class="-color-cyan msk-event-title">Cumpleaños<br>Milshake</h1>
-                <p class="-color-brown-dark msk-event-description">
-                    ¡Celebra tu cumpleaños con nosotros!<br>
-                    Ven a celebrar tu #cumpleaños a
-                    MILKSHAKE con tus familiares o
-                    amigos.
-                </p>
-                <div class="msk-event-image"></div>
-                <a href="#" class="-button -bg-cyan">Reserva<i class="fas fa-chevron-right"></i></a>
-            </div>
-            <div class="msk-moment -bg-cyan">
-                <h1 class="-color-salmon msk-moment-title">Momentos</h1>
-                <p class="-color-brown-dark msk-moment-description">
-                    En MILKSHAKE queremos brindarte una experiencia única en tus fechas especiales donde podrás
-                    compartir momentos mágicos con tus seres queridos.
-                </p>
+            <div class="msk-events-content">
+                <div class="msk-event -bg-salmon">
+                    <h1 class="-color-cyan msk-event-title">Cumpleaños<br>Milshake</h1>
+                    <p class="-color-brown-dark msk-event-description">
+                        ¡Celebra tu cumpleaños con nosotros!<br>
+                        Ven a celebrar tu #cumpleaños a
+                        MILKSHAKE con tus familiares o
+                        amigos.
+                    </p>
+                    <div class="msk-event-image"></div>
+                    <a href="#" class="-button -bg-cyan">Reserva<i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="msk-moment -bg-cyan">
+                    <h1 class="-color-salmon msk-moment-title">Momentos</h1>
+                    <p class="-color-brown-dark msk-moment-description">
+                        En MILKSHAKE queremos brindarte una experiencia única en tus fechas especiales donde podrás
+                        compartir momentos mágicos con tus seres queridos.
+                    </p>
+                </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="msk-footer">
+        <h1 class="-color-yellow msk-title-banner">CONTÁCTANOS</h1>
+        <hr class="msk-bar -bg-cyan">
+        <a href="/contact.html" class="-button -bg-cyan">Ver más<i class="fas fa-chevron-right"></i></a>
+        <section class="msk-section-footer-networks -bg-salmon">
+            <div class="msk-icons-section">
+                <i class="fab fa-facebook msk-icons -color-white"></i>
+                <i class="fab fa-instagram msk-icons -color-white"></i>
+            </div>
+            <span class="-color-white msk-subtitle-banner">Todas las imagenes de productos en este sitio son de
+                referencia.Copyright © MilkShake 2022. Todos los derechos reservados MilkShake.</span>
+        </section>
+    </footer>
     <script type="text/javascript" src="./js/slick.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
