@@ -28,11 +28,12 @@
         }
 
         @media (min-width:820px) {
-            height: 90hv;
+            height: 90vh;
+            padding-bottom: 8rem;
         }
 
         .msk-title-banner {
-            font-size: 4.8rem;
+            font-size: 5.5rem;
             font-weight: 100;
             margin: 0px;
             margin-block-start: 0px;
@@ -48,9 +49,9 @@
         }
 
         .msk-subtitle-banner {
-            font-size: 1rem;
+            font-size: 1.3rem;
             font-weight: bold;
-            margin-top: -1.5rem;
+            margin-top: -2.3rem;
 
             @media (min-width:481px) {
                 font-size: 1.8rem;
@@ -107,7 +108,6 @@
                 @media (min-width:820px) {
                     width: calc((100% / 3) - 5rem);
                     background-size: cover;
-                    border-radius: 0px;
                 }
 
                 &:nth-child(1) {
@@ -169,7 +169,7 @@
             }
 
             @media (min-width:820px) {
-                font-size: 1.8rem;
+                font-size: 1.3rem;
             }
         }
     }
@@ -207,8 +207,8 @@
             line-height: 4.8rem;
 
             @media (min-width:820px) {
-                font-size: 7.5rem;
-                line-height: 9rem;
+                font-size: 6.5rem;
+                line-height: 6.5rem;
             }
         }
 
@@ -221,13 +221,16 @@
             @media (min-width:481px) {}
 
             @media (min-width:820px) {
-                font-size: 1.8rem;
+                font-size: 1.4rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
             }
         }
 
         .msk-button {
             font-size: 1rem;
             font-weight: bold;
+            cursor: pointer;
         }
     }
 
@@ -378,133 +381,267 @@
         }
     }
 
-    .msk-slider-experience {
+    .msk-section-customers {
         width: 100%;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        text-align: center;
 
-        .msk-title-banner {
-            font-size: 5.8rem;
+        .msk-title {
+            font-size: 3rem;
             font-weight: 100;
             margin: 0px;
             margin-block-start: 0px;
             margin-block-end: 0px;
+
+
+            @media (min-width:481px) {
+                font-size: 4.2rem;
+            }
+
+            @media (min-width:820px) {
+                font-size: 5.2rem;
+            }
         }
 
-        .msk-client-experience {
+        .msk-customers-slider {
             width: 100%;
-            .msk-photo-client-experience {
-                width: 100%;
-                display: flex;
-                & .slick-list .slick-track {
-                    gap: 2.8rem !important;
+
+            & .slick-list .slick-track {
+                display: flex !important;
+                align-items: center !important;
+                gap: 1rem !important;
+            }
+
+            .msk-photo {
+                width: 15rem;
+                height: 17rem;
+                border-radius: 10px;
+                background-size: cover;
+                background-position: center;
+
+
+                @media (min-width:481px) {
+                    width: 20rem;
+                    height: 22rem;
                 }
 
-                .msk-photo-experience {
-                    width: 25rem;
-                    height: 27rem;
-                    border-radius: 10px;
-                    background-size: cover;
-                    background-position: center;
+                @media (min-width:820px) {
+                    width: 32rem;
+                    height: 34rem;
+                }
 
-                    &:nth-child(1) {
-                        background-image: url('../assets/img/experience/client_1.png');
+                &:nth-child(1) {
+                    background-image: url('../assets/img/experience/client_1.png');
+                }
+
+                &:nth-child(2) {
+                    background-image: url('../assets/img/experience/client_2.png');
+                }
+
+                &:nth-child(3) {
+                    background-image: url('../assets/img/experience/client_3.png');
+                }
+
+                &:nth-child(4) {
+                    background-image: url('../assets/img/experience/client_4.png');
+                }
+
+                &:nth-child(5) {
+                    background-image: url('../assets/img/experience/client_5.png');
+                }
+
+                &.slick-current {
+                    height: 19rem;
+
+                    @media (min-width:481px) {
+                        height: 25rem;
                     }
 
-                    &:nth-child(2) {
-                        background-image: url('../assets/img/experience/client_2.png');
-                    }
-
-                    &:nth-child(3) {
-                        background-image: url('../assets/img/experience/client_3.png');
-                    }
-
-                    &:nth-child(4) {
-                        background-image: url('../assets/img/experience/client_4.png');
-                    }
-
-                    &:nth-child(5) {
-                        background-image: url('../assets/img/experience/client_5.png');
+                    @media (min-width:820px) {
+                        height: 39rem;
                     }
                 }
             }
-
-
         }
     }
 }
 
-.msk-footer {
-    width: 100%;
-    position: relative;
+.msk-popup {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 12;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    padding-top: 3rem;
+    justify-content: center;
 
-    .msk-bar {
-        width: 25%;
-        height: .4rem;
-        border-radius: 25px;
-        margin: 1rem 0rem 1rem 0rem;
-        border: none;
-
-        @media (min-width:481px) {}
-
-        @media (min-width:820px) {
-            width: 10%;
-            margin-bottom: 2rem;
-        }
+    &:not(&.msk-activate) {
+        display: none;
     }
 
-    .msk-title-banner {
-        align-items: center;
-        font-size: 3.8rem;
-        font-weight: 100;
-        margin: 0px;
-        margin-block-start: 0px;
-        margin-block-end: 0px;
-
-        @media (min-width:481px) {}
-
-        @media (min-width:820px) {
-            font-size: 10rem;
-        }
+    &.msk-activate {
+        animation: showBackdrop ease-in .1s forwards,
+            colorBackdrop ease-in-out .5s forwards .1s;
     }
 
-    .msk-section-footer-networks {
-        align-items: center;
-        width: 100%;
-        height: 50%;
-        flex-direction: column;
+    &.msk-disable {
+        animation: hideBackdrop ease-in .1s forwards .5s,
+            transparentBackdrop ease-in-out .5s forwards;
+    }
+
+    .msk-card-popup {
+        width: 90%;
+        background-color: var(--color-beige);
+        border-radius: 10px;
+        min-height: 50%;
         display: flex;
-        gap: .4rem;
+        flex-direction: column;
+        align-items: center;
         padding: 1rem;
-        margin-top: 3rem;
+        gap: 1rem;
 
-        .msk-icons-section {
+
+        @media (min-width:481px) {
+            width: 60%;
+            min-height: 30%;
+        }
+
+        @media (min-width:820px) {
+            width: 45%;
+            min-height: 50%;
+        }
+
+        &.msk-open {
+            animation: openPopUp ease-in-out .8s forwards;
+        }
+
+        &.msk-close {
+            animation: closePopUp ease-in-out .8s forwards;
+        }
+
+        .msk-title {
+            width: 100%;
+            text-align: center;
+            font-size: 2rem;
+            position: relative;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 20%;
+                height: .3rem;
+                position: absolute;
+                bottom: 0px;
+                left: 40%;
+                background-color: var(--color-salmon);
+                border-radius: 10px;
+            }
+        }
+
+        .msk-stars {
+            width: 80%;
             display: flex;
             align-items: center;
-            gap: 2rem;
-            padding: 1rem;
-            justify-content: center;
+            gap: .5rem;
+            justify-content: flex-start;
+            font-size: 1.8rem;
+            color: #c1c1c1;
 
-            .msk-icons {
-                font-size: 3rem;
+            & i[class*="fas fa"] {
+                cursor: pointer;
+                transition: all ease-in-out 150ms;
+
+                &:hover {
+                    color: var(--color-yellow-dark);
+                }
             }
         }
 
-        .msk-subtitle-banner {
-            font-weight: normal;
-            font-size: .8rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
+        .msk-form-label {
+            text-align: left;
+            width: 80%;
+        }
 
-            @media (min-width:481px) {
-                max-width: 50%;
+        .msk-form-item {
+            border: none;
+            outline: none;
+            width: 80%;
+            padding: .8rem;
+            border-radius: 10px;
+            resize: vertical;
+
+            &::placeholder {
+                font-family: 'Montserrat', sans-serif;
             }
         }
+    }
+}
+
+
+
+@keyframes showBackdrop {
+    from {
+        display: none;
+    }
+
+    to {
+        display: flex;
+    }
+}
+
+@keyframes hideBackdrop {
+    from {
+        display: flex;
+    }
+
+    to {
+        display: none;
+    }
+}
+
+@keyframes colorBackdrop {
+    from {
+        background-color: transparent;
+    }
+
+    to {
+        background-color: #1a1a1a80;
+    }
+}
+
+@keyframes transparentBackdrop {
+    from {
+        background-color: #1a1a1a80;
+    }
+
+    to {
+        background-color: transparent;
+    }
+}
+
+@keyframes openPopUp {
+    from {
+        transform: translateY(-100%);
+        opacity: .1;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes closePopUp {
+    from {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-100%);
+        opacity: .1;
     }
 }
