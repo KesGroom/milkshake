@@ -311,20 +311,6 @@ h6 {
   background-image: url("./../assets/img/contact/banner-contact.png");
 }
 
-@media (min-width: 481px) {
-  .msk-main .msk-banner.msk-contact {
-    align-items: flex-start;
-    padding-left: 4rem;
-  }
-}
-
-@media (min-width: 481px) {
-  .msk-main .msk-banner {
-    height: 70vh;
-    padding-bottom: 15rem;
-  }
-}
-
 .msk-main .msk-banner .msk-title-banner {
   font-size: 5.5rem;
   font-weight: 100;
@@ -333,45 +319,10 @@ h6 {
   margin-block-end: 0px;
 }
 
-@media (min-width: 481px) {
-  .msk-main .msk-banner .msk-title-banner.alter {
-    position: relative;
-    font-weight: 100;
-    margin: 0px;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    font-size: 7.8rem;
-    line-height: 7.8rem;
-  }
-
-  .msk-main .msk-banner .msk-title-banner.alter::before {
-    width: 29%;
-    height: 0.5rem;
-    background-color: var(--color-salmon);
-    position: absolute;
-    display: inline-block;
-    content: "";
-    top: -1rem;
-    left: 0.3rem;
-  }
-}
-
-@media (min-width: 481px) {
-  .msk-main .msk-banner .msk-title-banner {
-    font-size: 7.8rem;
-  }
-}
-
 .msk-main .msk-banner .msk-subtitle-banner {
   font-size: 1.3rem;
   font-weight: bold;
   margin-top: -2.3rem;
-}
-
-@media (min-width: 481px) {
-  .msk-main .msk-banner .msk-subtitle-banner {
-    font-size: 1.8rem;
-  }
 }
 
 .msk-main .msk-bar {
@@ -380,12 +331,6 @@ h6 {
   border-radius: 25px;
   margin: 1.5rem 0rem 2rem 0rem;
   border: none;
-}
-
-@media (min-width: 481px) {
-  .msk-main .msk-bar.alter {
-    display: none;
-  }
 }
 
 .msk-main .msk-section {
@@ -404,12 +349,6 @@ h6 {
   align-items: center;
   justify-content: space-evenly;
   gap: 1rem;
-}
-
-@media (min-width: 481px) {
-  .msk-main .msk-photos {
-    flex-wrap: nowrap;
-  }
 }
 
 .msk-main .msk-photos .msk-photo {
@@ -432,23 +371,11 @@ h6 {
   background-image: url("../assets/img/home/section1_item3.png");
 }
 
-@media (min-width: 481px) {
-  .msk-main .msk-photos .msk-photo {
-    height: 18rem;
-  }
-}
-
 .msk-main .msk-photos-text {
   text-align: center;
   margin-top: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
-}
-
-@media (min-width: 481px) {
-  .msk-main .msk-photos-text {
-    width: 60%;
-  }
 }
 
 .msk-main .msk-section-slider {
@@ -464,12 +391,6 @@ h6 {
   height: 55vh;
 }
 
-@media (min-width: 481px) {
-  .msk-main .msk-section-slider .msk-slider {
-    height: 45vh;
-  }
-}
-
 .msk-main .msk-section-slider .msk-slider.slick-dotted.slick-slider {
   margin-bottom: 0px !important;
 }
@@ -477,12 +398,6 @@ h6 {
 .msk-main .msk-section-slider .msk-slider .msk-slide {
   width: 100%;
   height: 55vh;
-}
-
-@media (min-width: 481px) {
-  .msk-main .msk-section-slider .msk-slider .msk-slide {
-    height: 45vh;
-  }
 }
 
 .msk-main .msk-section-slider .msk-about {
@@ -502,13 +417,6 @@ h6 {
   line-height: 5rem;
   border-bottom: 0.5rem solid var(--color-yellow-dark);
   margin-bottom: 1rem;
-}
-
-@media (min-width: 481px) {
-  .msk-main .msk-section-slider .msk-about .msk-about-title {
-    font-size: 6rem;
-    line-height: 6rem;
-  }
 }
 
 .msk-main .msk-section-slider .msk-about .msk-about-subtitle {
@@ -563,16 +471,6 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-@media (min-width: 481px) {
-  .msk-main .msk-section-popular .msk-popular-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
-    width: 80%;
-    margin-bottom: 3rem;
-  }
 }
 
 .msk-main .msk-section-popular .msk-popular-content .msk-card-popular {
@@ -667,12 +565,6 @@ h6 {
   transition: all ease-in-out 100ms;
 }
 
-@media (min-width: 481px) {
-  .msk-main .msk-section-news .msk-slider-card {
-    width: 21rem;
-  }
-}
-
 .msk-main .msk-section-news .msk-slider-card .backdrop {
   background-color: rgba(26, 26, 26, 0.4235294118);
   width: 100%;
@@ -688,14 +580,6 @@ h6 {
   background-size: cover;
   transition: all ease-in-out 100ms;
 }
-
-@media (min-width: 481px) {
-  .msk-main .msk-section-news .msk-slider-card .msk-card-image {
-    width: 21rem;
-    height: 21rem;
-  }
-}
-
 .msk-main .msk-section-news .msk-slider-card .msk-card-image.pre-first {
   background-image: url("../assets/img/home/chocoramo.png");
   background-size: 100% 100%;
@@ -712,13 +596,6 @@ h6 {
 .msk-main .msk-section-news .msk-slider-card.slick-active .msk-card-image {
   width: 15rem;
   height: 13rem;
-}
-
-@media (min-width: 481px) {
-  .msk-main .msk-section-news .msk-slider-card.slick-active .msk-card-image {
-    width: 25rem;
-    height: 23rem;
-  }
 }
 
 .msk-main .msk-section-news .msk-slider-card.slick-active .backdrop {
@@ -790,12 +667,6 @@ h6 {
   position: relative;
 }
 
-@media (min-width: 481px) {
-  .msk-main .msk-section-events .msk-banner-event .msk-banner-title-event {
-    font-size: 5rem;
-  }
-}
-
 .msk-main .msk-section-events .msk-banner-event .msk-banner-title-event::after {
   position: absolute;
   bottom: 0px;
@@ -814,12 +685,6 @@ h6 {
   width: 100%;
 }
 
-@media (min-width: 481px) {
-  .msk-main .msk-section-events .msk-events-content {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-}
 
 .msk-main .msk-section-events .msk-event {
   padding: 1rem;
@@ -829,13 +694,6 @@ h6 {
   align-items: center;
   gap: 1rem;
   width: 100%;
-}
-
-@media (min-width: 481px) {
-  .msk-main .msk-section-events .msk-event {
-    flex-shrink: 0;
-    width: 50%;
-  }
 }
 
 .msk-main .msk-section-events .msk-event .msk-event-title {
@@ -857,6 +715,7 @@ h6 {
   background-size: cover;
   border-radius: 20px;
 }
+
 .msk-main .msk-section-events .msk-moment {
   padding: 2rem 1rem;
   text-align: center;
@@ -865,13 +724,6 @@ h6 {
   align-items: center;
   gap: 1rem;
   height: 12rem;
-}
-
-@media (min-width: 481px) {
-  .msk-main .msk-section-events .msk-moment {
-    height: 29.6rem;
-    justify-content: center;
-  }
 }
 
 .msk-main .msk-section-events .msk-moment .msk-moment-title {
@@ -908,43 +760,19 @@ h6 {
   background-position: center;
 }
 
-@media (min-width: 481px) {
-  .msk-main .msk-section-img .msk-photos .msk-photo {
-    width: 100%;
-    background-size: 50% 100%;
-    background-repeat: no-repeat;
-  }
-}
 
 .msk-main .msk-section-img .msk-photos .msk-photo:nth-child(1) {
   background-image: url("../assets/img/experience/section_item1.png");
-}
-
-@media (min-width: 481px) {
-  .msk-main .msk-section-img .msk-photos .msk-photo:nth-child(1) {
-    background-position: left;
-  }
 }
 
 .msk-main .msk-section-img .msk-photos .msk-photo:nth-child(2) {
   background-image: url("../assets/img/experience/section_item2.png");
 }
 
-@media (min-width: 481px) {
-  .msk-main .msk-section-img .msk-photos .msk-photo:nth-child(2) {
-    background-position: right;
-  }
-}
-
 .msk-main .msk-section-img .msk-photos .msk-photo:nth-child(3) {
   background-image: url("../assets/img/experience/section_item3.png");
 }
 
-@media (min-width: 481px) {
-  .msk-main .msk-section-img .msk-photos .msk-photo:nth-child(3) {
-    background-position: left;
-  }
-}
 .msk-main .msk-section-exp {
   width: 100%;
   margin-bottom: 1rem;
@@ -961,12 +789,6 @@ h6 {
   margin-bottom: 2rem;
 }
 
-@media (min-width: 481px) {
-  .msk-main .msk-section-exp .msk-button-text {
-    font-size: 1.2rem;
-  }
-}
-
 .msk-main .msk-section-experience {
   margin-top: 2rem;
   text-align: center;
@@ -981,12 +803,6 @@ h6 {
   gap: 0.5rem;
   padding-bottom: 10rem;
   padding: 2rem;
-}
-
-@media (min-width: 481px) {
-  .msk-main .msk-section-experience .form-experience {
-    padding: 2rem 8rem;
-  }
 }
 
 .msk-main .msk-section-experience .msk-title-banner {
@@ -1039,13 +855,6 @@ h6 {
   gap: 1.5rem;
 }
 
-@media (min-width: 481px) {
-  .msk-main .msk-section-review .msk-section-review-cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
 .msk-main .msk-section-review .msk-section-review-cards .msk-card-review {
   gap: 1rem;
   display: flex;
@@ -1056,12 +865,6 @@ h6 {
   padding: 20px;
   border-radius: 10px;
   text-align: left;
-}
-
-@media (min-width: 481px) {
-  .msk-main .msk-section-review .msk-section-review-cards .msk-card-review {
-    width: calc(50% - 1rem - 20px);
-  }
 }
 
 .msk-main .msk-section-review .msk-section-review-cards .msk-card-review .msk-top-card {
@@ -1082,6 +885,7 @@ h6 {
   margin-block-start: 0px;
   margin-block-end: 0px;
 }
+
 .msk-main .msk-section-review .msk-section-review-cards .msk-card-review .msk-top-card .msk-text-review .msk-subtitle-banner {
   font-size: 1rem;
   margin-top: 1.5rem;
@@ -1132,12 +936,6 @@ h6 {
   margin-block-end: 0px;
 }
 
-@media (min-width: 481px) {
-  .msk-main .msk-section-customers .msk-title {
-    font-size: 4.2rem;
-  }
-}
-
 .msk-main .msk-section-customers .msk-customers-slider {
   width: 100%;
 }
@@ -1154,13 +952,6 @@ h6 {
   border-radius: 10px;
   background-size: cover;
   background-position: center;
-}
-
-@media (min-width: 481px) {
-  .msk-main .msk-section-customers .msk-customers-slider .msk-photo {
-    width: 20rem;
-    height: 22rem;
-  }
 }
 
 .msk-main .msk-section-customers .msk-customers-slider .msk-photo:nth-child(1) {
@@ -1187,12 +978,6 @@ h6 {
   height: 19rem;
 }
 
-@media (min-width: 481px) {
-  .msk-main .msk-section-customers .msk-customers-slider .msk-photo.slick-current {
-    height: 25rem;
-  }
-}
-
 .msk-main .msk-section-contact {
   width: 100%;
   margin-bottom: 1rem;
@@ -1211,23 +996,11 @@ h6 {
   margin-top: 4rem;
 }
 
-@media (min-width: 481px) {
-  .msk-main .msk-section-contact .msk-title-banner {
-    font-size: 7.8rem;
-  }
-}
-
 .msk-main .msk-section-contact .msk-contact-text {
   text-align: center;
   margin-top: 1rem;
   font-weight: 900;
   margin-bottom: 2rem;
-}
-
-@media (min-width: 481px) {
-  .msk-main .msk-section-contact .msk-contact-text {
-    font-size: 1.2rem;
-  }
 }
 
 
@@ -1248,12 +1021,6 @@ h6 {
   height: 100%;
 }
 
-@media (min-width: 481px) {
-  .msk-main .msk-section-message .msk-form {
-    padding: 4rem 2rem;
-  }
-}
-
 .msk-main .msk-section-message .msk-form .msk-form-item {
   border: none;
   outline: none;
@@ -1261,12 +1028,6 @@ h6 {
   padding: 1rem 2rem;
   border-radius: 5px;
   resize: vertical;
-}
-
-@media (min-width: 481px) {
-  .msk-main .msk-section-message .msk-form .msk-form-item {
-    width: 75%;
-  }
 }
 
 .msk-main .msk-section-message .msk-form .msk-form-item::placeholder {
@@ -1290,11 +1051,6 @@ h6 {
   margin-block-end: 0px;
 }
 
-@media (min-width: 481px) {
-  .msk-main .msk-section-message .msk-address .msk-title {
-    font-size: 5.8rem;
-  }
-}
 .msk-main .msk-section-message .msk-address .msk-address-slider .slick-list .slick-track {
   display: flex !important;
   align-items: center !important;
@@ -1370,22 +1126,9 @@ h6 {
   margin-top: 2rem;
 }
 
-@media (min-width: 481px) {
-  .msk-main .msk-section-map .msk-title-banner {
-    font-size: 5.8rem;
-  }
-}
-
 .msk-main .msk-section-map .msk-iframe-map {
   width: 85%;
   height: 25rem;
-}
-
-@media (min-width: 481px) {
-  .msk-main .msk-section-map .msk-iframe-map {
-    width: 80%;
-    height: 40rem;
-  }
 }
 
 .msk-popup {
@@ -1423,14 +1166,6 @@ h6 {
   padding: 1rem;
   gap: 1rem;
 }
-
-@media (min-width: 481px) {
-  .msk-popup .msk-card-popup {
-    width: 60%;
-    min-height: 30%;
-  }
-}
-
 
 .msk-popup .msk-card-popup.msk-open {
   animation: openPopUp ease-in-out 0.8s forwards;
@@ -1551,12 +1286,7 @@ h6 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
-
-@media (min-width: 481px) {
-  .msk-footer .msk-section-footer-networks .msk-subtitle-banner {
-    max-width: 50%;
-  }
-}
+/* Animaciones */
 
 @keyframes showBackdrop {
   from {
@@ -1619,6 +1349,206 @@ h6 {
   to {
     transform: translateY(-100%);
     opacity: 0.1;
+  }
+}
+
+/* Inicio estilos tablet */
+
+@media (min-width: 481px) {
+  .msk-main .msk-banner.msk-contact {
+    align-items: flex-start;
+    padding-left: 4rem;
+  }
+
+  .msk-main .msk-banner {
+    height: 70vh;
+    padding-bottom: 15rem;
+  }
+
+  .msk-main .msk-banner {
+    height: 90vh;
+    padding-bottom: 8rem;
+  }
+
+  .msk-main .msk-banner .msk-title-banner.alter {
+    position: relative;
+    font-weight: 100;
+    margin: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    font-size: 7.8rem;
+    line-height: 7.8rem;
+  }
+
+  .msk-main .msk-banner .msk-title-banner.alter::before {
+    width: 29%;
+    height: 0.5rem;
+    background-color: var(--color-salmon);
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: -1rem;
+    left: 0.3rem;
+  }
+
+  .msk-main .msk-banner .msk-title-banner {
+    font-size: 7.8rem;
+  }
+
+  .msk-main .msk-banner .msk-subtitle-banner {
+    font-size: 1.8rem;
+  }
+
+  .msk-main .msk-bar.alter {
+    display: none;
+  }
+
+  .msk-main .msk-photos {
+    flex-wrap: nowrap;
+  }
+
+  .msk-main .msk-photos .msk-photo {
+    height: 18rem;
+  }
+
+  .msk-main .msk-photos-text {
+    width: 60%;
+  }
+
+  .msk-main .msk-section-slider .msk-slider {
+    height: 45vh;
+  }
+
+  .msk-main .msk-section-slider .msk-slider .msk-slide {
+    height: 45vh;
+  }
+
+  .msk-main .msk-section-slider .msk-about .msk-about-title {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  .msk-main .msk-section-popular .msk-popular-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+
+  .msk-main .msk-section-news .msk-slider-card {
+    width: 21rem;
+  }
+
+  .msk-main .msk-section-news .msk-slider-card .msk-card-image {
+    width: 21rem;
+    height: 21rem;
+  }
+
+  .msk-main .msk-section-news .msk-slider-card.slick-active .msk-card-image {
+    width: 25rem;
+    height: 23rem;
+  }
+
+  .msk-main .msk-section-events .msk-banner-event .msk-banner-title-event {
+    font-size: 5rem;
+  }
+
+  .msk-main .msk-section-events .msk-events-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .msk-main .msk-section-events .msk-event {
+    flex-shrink: 0;
+    width: 50%;
+  }
+
+  .msk-main .msk-section-events .msk-moment {
+    height: 29.6rem;
+    justify-content: center;
+  }
+
+  .msk-main .msk-section-img .msk-photos .msk-photo {
+    width: 100%;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .msk-main .msk-section-img .msk-photos .msk-photo:nth-child(1) {
+    background-position: left;
+  }
+
+  .msk-main .msk-section-img .msk-photos .msk-photo:nth-child(2) {
+    background-position: right;
+  }
+
+  .msk-main .msk-section-img .msk-photos .msk-photo:nth-child(3) {
+    background-position: left;
+  }
+
+  .msk-main .msk-section-exp .msk-button-text {
+    font-size: 1.2rem;
+  }
+
+  .msk-main .msk-section-experience .form-experience {
+    padding: 2rem 8rem;
+  }
+
+  .msk-main .msk-section-review .msk-section-review-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .msk-main .msk-section-review .msk-section-review-cards .msk-card-review {
+    width: calc(50% - 1rem - 20px);
+  }
+
+  .msk-main .msk-section-customers .msk-title {
+    font-size: 4.2rem;
+  }
+
+  .msk-main .msk-section-customers .msk-customers-slider .msk-photo {
+    width: 20rem;
+    height: 22rem;
+  }
+
+  .msk-main .msk-section-customers .msk-customers-slider .msk-photo.slick-current {
+    height: 25rem;
+  }
+
+  .msk-main .msk-section-contact .msk-title-banner {
+    font-size: 7.8rem;
+  }
+
+  .msk-main .msk-section-contact .msk-contact-text {
+    font-size: 1.2rem;
+  }
+
+  .msk-main .msk-section-message .msk-form {
+    padding: 4rem 2rem;
+  }
+
+  .msk-main .msk-section-message .msk-address .msk-title {
+    font-size: 5.8rem;
+  }
+
+  .msk-main .msk-section-map .msk-title-banner {
+    font-size: 5.8rem;
+  }
+
+  .msk-main .msk-section-map .msk-iframe-map {
+    width: 80%;
+    height: 40rem;
+  }
+
+  .msk-popup .msk-card-popup {
+    width: 60%;
+    min-height: 30%;
+  }
+
+  .msk-footer .msk-section-footer-networks .msk-subtitle-banner {
+    max-width: 50%;
   }
 }
 
@@ -1711,114 +1641,145 @@ h6 {
     width: 55%;
     height: 35rem;
   }
+
   .msk-main .msk-section-events .msk-event .msk-event-title {
     font-size: 4.5rem;
     line-height: 4.5rem;
   }
+
   .msk-main .msk-section-events .msk-event .msk-event-description {
     width: 70%;
   }
+
   .msk-main .msk-section-events .msk-event .msk-event-image {
     width: 80%;
     height: 13rem;
   }
+
   .msk-main .msk-section-events .msk-moment {
     order: 1;
     height: 35rem;
   }
+
   .msk-main .msk-section-img .msk-photos {
     flex-wrap: nowrap;
   }
+
   .msk-main .msk-section-img .msk-photos .msk-photo {
     width: calc(33.3333333333% - 5rem);
     background-size: cover;
   }
+
   .msk-main .msk-section-img .msk-photos .msk-photo:nth-child(1) {
     font-size: 9.8rem;
   }
+
   .msk-main .msk-section-img .msk-photos .msk-photo:nth-child(2) {
     font-size: 9.8rem;
   }
+
   .msk-main .msk-section-img .msk-photos .msk-photo:nth-child(3) {
     font-size: 9.8rem;
   }
+
   .msk-main .msk-section-exp .msk-button-text {
     font-size: 1.3rem;
   }
+
   .msk-main .msk-section-experience .form-experience {
     padding: 4rem 30rem;
     gap: 3rem;
   }
+
   .msk-main .msk-section-experience .msk-title-banner {
     font-size: 6.5rem;
     line-height: 6.5rem;
   }
+
   .msk-main .msk-section-experience .msk-subtitle-banner {
     font-size: 1.4rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+
   .msk-main .msk-section-review .msk-section-review-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     width: 70%;
   }
+
   .msk-main .msk-section-review .msk-section-review-cards .msk-card-review {
     width: calc(50% - 3rem - 20px);
     width: 90%;
     max-width: 500px;
   }
+
   .msk-main .msk-section-review .msk-section-review-cards .msk-card-review .msk-top-card {
     gap: 4rem;
   }
+
   .msk-main .msk-section-review .msk-section-review-cards .msk-card-review .msk-top-card .msk-text-review .msk-title-banner {
     font-size: 2.2rem;
   }
+
   .msk-main .msk-section-review .msk-section-review-cards .msk-card-review .msk-top-card .msk-text-review .msk-subtitle-banner {
     font-size: 1.3rem;
   }
+
   .msk-main .msk-section-review .msk-section-review-cards .msk-card-review .msk-img-review {
     width: 8rem;
     height: 8rem;
   }
+
   .msk-main .msk-section-customers .msk-title {
     font-size: 5.2rem;
   }
+
   .msk-main .msk-section-customers .msk-customers-slider .msk-photo {
     width: 32rem;
     height: 34rem;
   }
+
   .msk-main .msk-section-customers .msk-customers-slider .msk-photo.slick-current {
     height: 39rem;
   }
+
   .msk-main .msk-section-contact .msk-title-banner {
     font-size: 6.8rem;
   }
+
   .msk-main .msk-section-contact .msk-contact-text {
     font-size: 1.4rem;
   }
+
   .msk-main .msk-section-message {
     flex-direction: row;
     align-items: flex-start;
   }
+
   .msk-main .msk-section-message .msk-form {
     min-height: 33.8rem;
   }
+
   .msk-main .msk-section-message .msk-address .msk-title {
     font-size: 6.8rem;
   }
+
   .msk-main .msk-section-map .msk-title-banner {
     font-size: 6.8rem;
   }
+
   .msk-popup .msk-card-popup {
     width: 45%;
     min-height: 50%;
   }
+
   .msk-footer .msk-bar {
     width: 10%;
     margin-bottom: 2rem;
   }
+
   .msk-footer .msk-title {
     font-size: 7rem;
   }
