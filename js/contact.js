@@ -11,18 +11,5 @@ $(document).ready(function () {
         body[0].classList.remove('no-scroll');
         menu[0].classList.remove('open');
     })
-    const dotsAddress = $('.msk-address-dots');
-    $('#msk-address-slider').slick({
-        dots: true,
-        infinite: false,
-        speed: 200,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        dotsClass: 'msk-address-dot slick-dots',
-        appendDots: dotsAddress,
-        centerMode: true,
-        variableWidth: true,
-        initialSlide: 1,
-    })
+    
 })
