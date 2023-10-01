@@ -335,6 +335,91 @@
         }
     }
 
+    .msk-section-events {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .msk-banner-event {
+            background-image: url("../assets/img/home/eventos.png");
+            background-size: cover;
+            width: 100%;
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #1a1a1aa4;
+            background-blend-mode: soft-light;
+
+            .msk-banner-title-event {
+                font-size: 4rem;
+                font-weight: 100;
+                margin-inline-end: 0px;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    bottom: 0px;
+                    left: 25%;
+                    content: '';
+                    width: 50%;
+                    height: .3rem;
+                    display: inline-block;
+                    background-color: var(--color-yellow);
+                }
+            }
+        }
+
+        .msk-event {
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            .msk-event-title {
+                font-size: 3.5rem;
+                font-weight: 100;
+                line-height: 3.5rem;
+            }
+
+            .msk-event-description {
+                width: 90%;
+                font-weight: bold;
+            }
+
+            .msk-event-image {
+                background-image: url("../assets/img/home/birthday.png");
+                width: 90%;
+                height: 10rem;
+                background-position: center;
+                background-size: cover;
+                border-radius: 20px;
+            }
+        }
+
+        .msk-moment {
+            padding: 2rem 1rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            .msk-moment-title {
+                font-size: 3.5rem;
+                font-weight: 100;
+                line-height: 3.5rem;
+            }
+
+            .msk-moment-description {
+                width: 90%;
+                font-weight: bold;
+            }
+        }
+    }
+
 }
 
 .msk-slider {
