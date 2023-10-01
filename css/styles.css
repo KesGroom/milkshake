@@ -21,7 +21,7 @@ body {
     font-size: 16px;
     position: relative;
 
-    &.no-scroll{
+    &.no-scroll {
         overflow: hidden;
     }
 
@@ -125,4 +125,164 @@ h6 {
 
 .-color-black {
     color: var(--color-black) !important;
+}
+
+.msk-header {
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    position: fixed !important;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    padding: .3rem;
+    padding-right: 3rem;
+
+    & i[class*="fas fa"] {
+        font-size: 1.5rem;
+    }
+
+    .msk-header-bars {
+        @media (min-width:820px) {
+            display: none;
+        }
+    }
+
+    .msk-logo {
+        width: 10rem;
+        display: none;
+
+        @media (min-width:820px) {
+            display: inline-block;
+        }
+    }
+
+    .msk-nav {
+        display: none;
+        align-items: center;
+        gap: 3rem;
+
+        .msk-nav-item {
+            color: var(--color-white);
+            text-decoration: none;
+            font-weight: bold;
+            transition: all ease-in-out 100ms;
+
+            &:hover {
+                color: var(--color-yellow-dark) !important
+            }
+        }
+
+        @media (min-width:820px) {
+            display: flex;
+        }
+    }
+
+    .msk-search {
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all ease-in-out 100ms;
+
+        &:hover {
+            color: var(--color-yellow-dark) !important;
+        }
+    }
+}
+
+.msk-lateral-menu {
+    width: 100%;
+    background-color: var(--color-beige);
+    padding: 1rem;
+    position: fixed;
+    z-index: 11;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: -100%;
+    transition: all ease-in-out 150ms;
+    overflow-y: auto;
+
+    &.open {
+        left: 0px;
+    }
+
+    .msk-top-section {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        .msk-logo {
+            width: 70%;
+        }
+    }
+
+    .msk-menu-item {
+        width: 100%;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: flex-start;
+        text-decoration: none;
+        color: var(--color-brown-dark);
+        padding: 1rem 1rem;
+        border-bottom: 1px solid var(--color-brown-dark);
+
+        &.msk-select {
+            border-color: var(--color-salmon);
+            border-right: 1px solid;
+            border-top: 1px solid;
+            border-radius: 0px 10px 10px 0px;
+            font-weight: bold;
+            border-width: 2px;
+        }
+    }
+
+    .msk-close-button {
+        width: 100%;
+        text-align: right;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: .5rem;
+        font-weight: bold;
+
+        & i[class*="fas fa"] {
+            font-size: 1.5rem;
+        }
+    }
+
+    .msk-section-menu-networks {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: .8rem;
+        text-align: center;
+        margin-top: .5rem;
+
+        & .msk-icons-section {
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: .5rem;
+        }
+    }
+}
+
+.msk-backdrop-header {
+    background-color: #4c2a2183;
+    width: 100%;
+    height: 4.5rem;
+    position: fixed;
+    z-index: 8;
+    /* filter: opacity(.5); */
 }

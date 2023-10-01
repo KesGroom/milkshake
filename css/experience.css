@@ -394,19 +394,17 @@
         }
 
         .msk-client-experience {
+            width: 100%;
             .msk-photo-client-experience {
                 width: 100%;
                 display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: space-evenly;
-                gap: 1rem;
-                row-gap: 1rem;
-                padding: 1.5rem;
+                & .slick-list .slick-track {
+                    gap: 2.8rem !important;
+                }
 
                 .msk-photo-experience {
-                    width: 22rem;
-                    height: 24rem;
+                    width: 25rem;
+                    height: 27rem;
                     border-radius: 10px;
                     background-size: cover;
                     background-position: center;
